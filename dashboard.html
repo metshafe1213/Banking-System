@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Style/layout.css">
+</head>
+<body>
+    <header class="box" id="header">
+        <h1>Banking System</h1>
+        <div id="profileArea">
+            <img src="assets/icons8-test-account-50.png" alt="profile icon" id="profileICON">
+        </div>
+    </header>
+    <div>
+        <aside class="box" id="sidebar">
+            <h2>Menu</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="deposit.html">Deposit</a>
+                <a href="withdraw.html">Withdraw</a>
+                <a href="transfer.html">Transfer</a>
+                <a href="transactions.html">Transactions</a>
+            </nav>
+        </aside>
+        <main class="box" id="main">
+            <header><h3>Dashboard</h3></header>
+            <hr><br>
+            <div class="dashboardBox">
+
+                <div id="accountBox">
+                    <div>
+                        <label class="accountValues">Full Name: </label>
+                        <span class="accountValues" id="fullNameValue"></span>
+                    </div>
+                    <div>
+                        <label class="accountValues">Account No: </label>
+                        <span class="accountValues" id="accountNumberValue"></span>
+                    </div>
+                    <div>
+                        <label class="accountValues">Balance: </label>
+                        <span class="accountValues" id="balanceValue"></span>
+                    </div>
+                </div>
+
+                <div id="transactionsBox">
+                    <div>
+                        <strong>Recent Transactions</strong>
+                        <hr>
+                        <div id="transactionsList"></div>
+                    </div>
+                </div>
+
+                <div id="depositBox">
+                    <span>💰</span>
+                    <strong>Deposit</strong>
+                </div>
+
+                <div id="withdrawBox">
+                    <span>💸</span>
+                    <strong>Withdraw</strong>
+                </div>
+
+                <div id="transferBox">
+                    <span>🔄</span>
+                    <strong>Transfer</strong>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
